@@ -20,9 +20,11 @@ import SvgColor from 'src/components/svg-color';
 export default function PostCard({ post, index }) {
   const { cover, title, view, comment, share, author, createdAt } = post;
 
-  const latestPostLarge = index === 0;
+  // const latestPostLarge = index === 0;
+  const latestPostLarge = 0;
 
-  const latestPost = index === 1 || index === 2;
+  // const latestPost = index === 1 || index === 2;
+  const latestPost = 0;
 
   const renderAvatar = (
     <Avatar
@@ -200,6 +202,60 @@ export default function PostCard({ post, index }) {
       </Card>
     </Grid>
   );
+
+  // 원본
+  // return (
+  //   <Grid xs={12} sm={latestPostLarge ? 12 : 6} md={latestPostLarge ? 6 : 3}>
+  //     <Card>
+  //       <Box
+  //         sx={{
+  //           position: 'relative',
+  //           pt: 'calc(100% * 3 / 4)',
+  //           ...((latestPostLarge || latestPost) && {
+  //             pt: 'calc(100% * 4 / 3)',
+  //             '&:after': {
+  //               top: 0,
+  //               content: "''",
+  //               width: '100%',
+  //               height: '100%',
+  //               position: 'absolute',
+  //               bgcolor: (theme) => alpha(theme.palette.grey[900], 0.72),
+  //             },
+  //           }),
+  //           ...(latestPostLarge && {
+  //             pt: {
+  //               xs: 'calc(100% * 4 / 3)',
+  //               sm: 'calc(100% * 3 / 4.66)',
+  //             },
+  //           }),
+  //         }}
+  //       >
+  //         {renderShape}
+
+  //         {renderAvatar}
+
+  //         {renderCover}
+  //       </Box>
+
+  //       <Box
+  //         sx={{
+  //           p: (theme) => theme.spacing(4, 3, 3, 3),
+  //           ...((latestPostLarge || latestPost) && {
+  //             width: 1,
+  //             bottom: 0,
+  //             position: 'absolute',
+  //           }),
+  //         }}
+  //       >
+  //         {renderDate}
+
+  //         {renderTitle}
+
+  //         {renderInfo}
+  //       </Box>
+  //     </Card>
+  //   </Grid>
+  // );
 }
 
 PostCard.propTypes = {

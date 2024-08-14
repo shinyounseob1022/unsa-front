@@ -8,27 +8,27 @@ const icon = (name) => (
 
 const navConfig = [
   {
-    title: 'dashboard',
+    title: '홈',
     path: '/',
+    icon: icon('ic_blog'),
+  },
+  {
+    title: '관리자',
+    path: '/admin',
     icon: icon('ic_analytics'),
   },
   {
-    title: 'user',
+    title: '회원관리',
     path: '/user',
     icon: icon('ic_user'),
   },
   {
-    title: 'product',
+    title: '상품',
     path: '/products',
     icon: icon('ic_cart'),
   },
   {
-    title: 'blog',
-    path: '/blog',
-    icon: icon('ic_blog'),
-  },
-  {
-    title: 'login',
+    title: '로그인',
     path: '/login',
     icon: icon('ic_lock'),
   },

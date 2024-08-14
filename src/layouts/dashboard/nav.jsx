@@ -70,7 +70,7 @@ export default function Nav({ openNav, onCloseNav }) {
     </Stack>
   );
 
-  // 업그레이드 UI 삭제
+  // 업그레이드 UI 제거
   // const renderUpgrade = (
   //   <Box sx={{ px: 2.5, pb: 3, mt: 10 }}>
   //     <Stack alignItems="center" spacing={3} sx={{ pt: 5, borderRadius: 2, position: 'relative' }}>
